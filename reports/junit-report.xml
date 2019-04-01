@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+    <testsuite name="searching-for-vote-cards-app;google-search-for-vote-cards-app" tests="3" failures="0" skipped="0">
+        <properties>
+            <property name="@search" value="true">
+            </property>
+            <property name="URI" value="C:/new/features/googleSearch.feature">
+            </property>
+        </properties>
+        <testcase name="Given I am Google page" classname="searching-for-vote-cards-app;google-search-for-vote-cards-app" time="8.216313789">
+        </testcase>
+        <testcase name="When I search Google for &quot;selenium&quot;" classname="searching-for-vote-cards-app;google-search-for-vote-cards-app" time="2.387089233">
+        </testcase>
+        <testcase name="Then I should see more results in the results &quot;selenium - Google Search&quot;" classname="searching-for-vote-cards-app;google-search-for-vote-cards-app" time="0.019150341">
+        </testcase>
+    </testsuite>
+    <testsuite name="searching-for-vote-cards-app;google-search-for-vote-cards-app" tests="3" failures="0" skipped="0">
+        <properties>
+            <property name="@search" value="true">
+            </property>
+            <property name="URI" value="C:/new/features/googleSearch.feature">
+            </property>
+        </properties>
+        <testcase name="Given I am Google page" classname="searching-for-vote-cards-app;google-search-for-vote-cards-app" time="7.564764045">
+        </testcase>
+        <testcase name="When I search Google for &quot;testing&quot;" classname="searching-for-vote-cards-app;google-search-for-vote-cards-app" time="2.445375963">
+        </testcase>
+        <testcase name="Then I should see more results in the results &quot;testing - Google Search&quot;" classname="searching-for-vote-cards-app;google-search-for-vote-cards-app" time="0.048131791">
+        </testcase>
+    </testsuite>
+</testsuites>
