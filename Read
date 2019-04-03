@@ -39,7 +39,7 @@ app.use(express.json());
 const port = process.env.PORT || 3000;
 app.listen(port, () => console.log(`Listening to the port ${port}`));
 
-app.post("/3scale", (req, res) => {
+app.post("/", (req, res) => {
   const result = Joi.validate(req.body);
   console.log(res);
 
@@ -52,3 +52,28 @@ app.post("/3scale", (req, res) => {
   res.send("Thanks you");
 });
 
+const express = require("express");
+const bodyParser = require("body-parser");
+const app = express();
+
+const http = require("http");
+const { parse } = require("querystring");
+
+app.use(bodyParser.urlencoded({ extended: false }));
+
+app.post("/test", function(req, res) {
+  let body = [];
+//   req.on("data", chunk => {
+//     body += chunk.toString();
+//   });
+//   req.on("end", () => {
+//     console.log(parse(body));
+//     res.end("ok");
+//   });
+
+req.on('data' , (chunk) => {
+body.push(chunk);
+}).on('end', () =>{
+    body = Buffer.concat(body).toString();
+})
+});
